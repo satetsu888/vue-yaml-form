@@ -4,6 +4,15 @@
     </head>
     <body>
         <div id="app">
+            <h1>Vue-YAML-Form</h1>
+            <h2>Input</h2>
+            <ul>
+                <li>a: <input type="text" v-model="yamlObj['a']"></li>
+                <li>b: <input type="text" v-model="yamlObj['b']"></li>
+            </ul>
+
+            <h2>Result</h2>
+            <textarea v-model="yamlObj | toYaml"></textarea>
         </div>
         <script type="text/javascript" src="dest/dest.js" charset="utf-8"></script>
     </body>
